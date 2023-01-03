@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+    --main-bg: #F8EDEB;
+    --secondary-bg: #FFF9F9;
+    --tertiary-bg: #FEC89A;
+    --main-button-bg: #FEC5BB;
+    --font: #232323;
+    --font-placeholder: #8E9EAD;
+    --header-weight: 600;
+    --text-font: 'Nunito', sans-serif;
+    --header-font: 'Space Grotesk', sans-serif;
+    --navbar-font-size: 1.6rem;
+    --header-font-size: 6.4rem;
+    --button-font-size: 1.6rem;
+    --body-font-size: 2.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+    list-style: none;
+    text-decoration: none;
+}

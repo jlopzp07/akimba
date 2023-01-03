@@ -58,8 +58,12 @@ a {
 }
 
 .container {
-    margin: auto;
+    margin: 0 auto;
     background-color: var(--secondary-bg);
+    background-image: url("/assets/Paws.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .main-button {
@@ -87,15 +91,67 @@ p {
     color: var(--font);
 }
 
+.caption,
+b {
+    font-size: 1.2rem;
+}
+
 .hero-content {
     max-width: 670px;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: auto;
-    padding: 56px;
+    padding-top: 56px;
+}
+
+.input-email {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    box-shadow: var(--shadows);
+    margin-top: 16px;
+}
+
+.input-email button {
+    width: 300px;
+}
+
+.form {
+    max-width: 450px;
+    margin: 56px auto;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 48px;
+    margin-left: 16px;
+    font-size: 1.6rem;
+    background-color: transparent;
+}
+
+input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: var(--font-placeholder);
 }
 
 .hero-content p {
     margin-top: 16px;
 }
+
+svg {
+    margin-top: -90px;
+}
+

@@ -5,7 +5,7 @@
     --secondary-bg: #FFF9F9;
     --tertiary-bg: #FEC89A;
     --main-button-bg: #FEC5BB;
-    --font: #232323;
+    --font: #575757;
     --font-placeholder: #8E9EAD;
     --header-weight: 600;
     --text-font: 'Nunito', sans-serif;
@@ -14,6 +14,7 @@
     --header-font-size: 6.4rem;
     --button-font-size: 1.6rem;
     --body-font-size: 2.4rem;
+    --shadows: 1px 1px 0px 2px #222831;
 }
 
 * {
@@ -23,4 +24,78 @@
     font-size: 62.5%;
     list-style: none;
     text-decoration: none;
+}
+
+html {
+    background-color: var(--main-bg);
+}
+
+header nav img {
+    width: 180px;
+}
+
+nav {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+nav ul {
+    display: inherit;
+    column-gap: 40px;
+}
+
+nav ul li {
+    font-size: var(--body-font-size);
+}
+
+a {
+    
+    color: var(--font);
+}
+
+.container {
+    margin: auto;
+    background-color: var(--secondary-bg);
+}
+
+.main-button {
+    width: 165px;
+    height: 48px;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    font-size: var(--button-font-size);
+    background-color: var(--main-button-bg);
+    box-shadow: var(--shadows);
+    border: none;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    color: var(--font);
+}
+
+p {
+    font-size: var(--body-font-size);
+    color: var(--font);
+}
+
+.hero-content {
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 56px;
+}
+
+.hero-content p {
+    margin-top: 16px;
 }

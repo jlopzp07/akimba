@@ -86,6 +86,12 @@ h1 {
     color: var(--font);
 }
 
+h2 {
+    font-family: var(--header-font);
+    font-size: 4rem;
+    color: var(--font);
+}
+
 p {
     font-size: var(--body-font-size);
     color: var(--font);
@@ -155,3 +161,60 @@ svg {
     margin-top: -90px;
 }
 
+.services-1-container {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    background-image: url("/assets/Paws.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-images {
+    display: flex;
+    height: auto;
+}
+
+.product-images::before {
+    content: '';
+    position:absolute;
+    width: 380px;
+    height: 215px;
+    background-color: var(--tertiary-bg);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid #232323;
+    z-index: -99;
+    margin-top: -10px;
+}
+
+.product-images img {
+    max-height: 408px;
+}
+
+.product-images img:nth-child(2) {
+    margin-top: 100px;
+    margin-left: -20px;
+}
+
+.services-content {
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.services-content p {
+    margin-top: 24px;
+}
+
+.services-content .main-button {
+    margin-top: 48px;
+    width: 250px;
+}

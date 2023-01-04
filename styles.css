@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 
 :root {
     --main-bg: #F8EDEB;
@@ -48,12 +49,12 @@ nav ul {
     column-gap: 40px;
 }
 
-nav ul li {
-    font-size: var(--body-font-size);
+nav ul li a {
+    font-size: var(--navbar-font-size);
 }
 
 a {
-    
+
     color: var(--font);
 }
 
@@ -78,6 +79,7 @@ a {
     background-color: var(--main-button-bg);
     box-shadow: var(--shadows);
     border: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -157,11 +159,19 @@ input::placeholder {
     margin-top: 16px;
 }
 
-svg {
+.bottom {
+    position: relative;
     margin-top: -90px;
+    z-index: -1000;
 }
 
-.services-1-container {
+.top {
+    position: relative;
+    margin-bottom: -90px;
+    z-index: -1000;
+}
+
+.services-container {
     display: flex;
     max-width: 1280px;
     margin: auto;
@@ -179,7 +189,7 @@ svg {
 
 .product-images::before {
     content: '';
-    position:absolute;
+    position: absolute;
     width: 380px;
     height: 215px;
     background-color: var(--tertiary-bg);
@@ -189,12 +199,13 @@ svg {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     border: 2px solid #232323;
-    z-index: -99;
+    z-index: 99;
     margin-top: -10px;
 }
 
 .product-images img {
     max-height: 408px;
+    z-index: 100;
 }
 
 .product-images img:nth-child(2) {
@@ -208,6 +219,7 @@ svg {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+    justify-content: center;
 }
 
 .services-content p {
@@ -217,4 +229,76 @@ svg {
 .services-content .main-button {
     margin-top: 48px;
     width: 250px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: left !important;
+}
+
+.services-container.reverse .services-content {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 56px;
+}
+
+.contact-container h2 {
+    text-align: center;
+}
+
+.contact-container .form {
+    margin: 0 auto;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 32px 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.footer-social .social-media {
+    display: inherit;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.footer-social img {
+    width: 73px;
+    height: 64px;
+    align-items: center;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 1.8rem;
+}
+
+i {
+    display: inherit;
+    font-size: 32px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links .links a:nth-child(1) {
+    margin-right: 24px;
+}
+
+hr {
+    margin: 56px 0;
 }

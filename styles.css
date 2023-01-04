@@ -207,6 +207,7 @@ input::placeholder {
     border: 2px solid #232323;
     z-index: 99;
     margin-top: -10px;
+    margin-right: 24px;
 }
 
 .product-images img {
@@ -240,7 +241,7 @@ input::placeholder {
 .reverse {
     flex-direction: row-reverse;
     text-align: left !important;
-    margin: 0 24px;
+    padding: 0 24px;
 }
 
 .services-container.reverse .services-content {

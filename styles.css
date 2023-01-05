@@ -86,7 +86,6 @@ a {
     border: none;
     cursor: pointer;
     color: var(--font);
-    font-weight: 400;
 }
 
 .secondary-button {

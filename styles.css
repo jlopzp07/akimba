@@ -386,6 +386,23 @@ hr {
     opacity: 100%;
 }
 
+
+.thanks-container,
+.thanks-content {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.thanks-content img {
+    width: 200px;
+}
+
+
 @media screen and (max-width: 1024px) {
 
     nav .nav-desktop {

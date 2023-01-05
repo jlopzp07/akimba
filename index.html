@@ -16,23 +16,42 @@
             <nav>
                 <div class="nav-desktop">
                     <img src="assets/akimba-logo.png" alt="Akimba logo image">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nuestros servicios</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-                <a href="https://pettoapp.bubbleapps.io/version-test" target="_blank"><button class="main-button">Ir a la aplicación</button></a>
+                    <ul>
+                        <li><a href="#home" class="close">Inicio</a></li>
+                        <li><a href="#services">Nuestros servicios</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                    </ul>
+                    <a href="https://pettoapp.bubbleapps.io/version-test" target="_blank"><button class="main-button">Ir
+                            a la aplicación</button></a>
                 </div>
                 <div class="nav-mobile">
                     <img src="assets/akimba-logo.png" alt="Akimba logo image">
-                    <i class="fi fi-rr-menu-burger"></i>
+                    <a href="https://pettoapp.bubbleapps.io/version-test" target="_blank"><button class="secondary-button">Ir
+                        a la aplicación</button></a>
+                    <!-- <i class="fi fi-rr-menu-burger menu"></i>
+                    <div class="nav-mobile-menu">
+                        <div class="nav-mobile-menu-content">
+                            <div class="nav-mobile-header">
+                                <img src="assets/akimba-logo.png" alt="Akimba logo image">
+                                <i class="fi fi-rr-cross close"></i>
+                            </div>
+                            <ul>
+                                <li><a href="#home">Inicio</a></li>
+                                <li><a href="#services">Nuestros servicios</a></li>
+                                <li><a href="#">Sobre nosotros</a></li>
+                            </ul>
+                            <a href="https://pettoapp.bubbleapps.io/version-test" target="_blank"><button
+                                    class="main-button">Ir
+                                    a la aplicación</button></a>
+                        </div>
+                    </div> -->
                 </div>
             </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" id="home">
                 <h1>Por ellos y para ellos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa amet explicabo. Laboriosam
                     eveniet porro in ad labore voluptas tenetur?</p>
@@ -52,7 +71,7 @@
                 d="M53.3333 150.001L0 160.001V0.000976562H1280V142.001L1226.67 153.001C1173.33 164.001 1066.67 186.001 960 207.001C853.333 228.002 746.667 248.002 640 230.002C533.333 212.001 426.667 156.001 320 138.001C213.333 120.001 106.667 140.001 53.3335 150.001L53.3333 150.001Z"
                 fill="#FFF9F9" />
         </svg>
-        <div class="services-container">
+        <div class="services-container" id="services">
             <div class="product-images">
                 <img src="assets/Landing-Image-1.png" alt="akimba app home image">
                 <img src="assets/Landing-Image-2.png" alt="akimba app walk service image">
@@ -141,4 +160,5 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>

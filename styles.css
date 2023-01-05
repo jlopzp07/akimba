@@ -392,17 +392,22 @@ hr {
 .thanks-content {
     height: 90vh;
     display: grid;
+    row-gap: 24px;
     place-items: center;
     align-content: center;
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    padding: 0 16px;
 }
 
 .thanks-content img {
     width: 200px;
 }
 
+.thanks-container .main-button {
+    width: 200px;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -493,5 +498,17 @@ hr {
 
     .footer-links .links a:nth-child(1) {
         margin-right: 0;
+    }
+
+    .thanks-content img {
+        width: 100px;
+    }
+
+    .thanks-content h1 {
+        font-size: 2.4rem;
+    }
+    
+    .thanks-content p {
+        font-size: 1.4rem;
     }
 }

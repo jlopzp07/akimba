@@ -73,7 +73,7 @@ a {
 }
 
 .main-button {
-    width: 165px;
+    padding: 0 24px;
     height: 48px;
     border-radius: 1000px;
     -webkit-border-radius: 1000px;

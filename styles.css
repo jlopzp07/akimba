@@ -60,7 +60,6 @@ nav ul li a {
 }
 
 a {
-
     color: var(--font);
 }
 
@@ -86,6 +85,7 @@ a {
     box-shadow: var(--shadows);
     border: none;
     cursor: pointer;
+    color: var(--font);
 }
 
 .secondary-button {
@@ -101,6 +101,7 @@ a {
     box-shadow: var(--shadows);
     border: 1px solid #222831;
     cursor: pointer;
+    color: var(--font);
 }
 
 h1 {

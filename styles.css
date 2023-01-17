@@ -299,6 +299,11 @@ input::placeholder {
     column-gap: 32px;
 }
 
+.footer-social .social-media a {
+    display: inherit;
+    align-items: center;
+}
+
 .footer-social img {
     width: 73px;
     height: 64px;

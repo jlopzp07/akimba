@@ -126,6 +126,11 @@ b {
     font-size: 1.2rem;
 }
 
+.hero-content .form label,
+.hero-content .form label b {
+    font-size: 1.6rem;
+}
+
 .hero-content {
     max-width: 670px;
     display: flex;

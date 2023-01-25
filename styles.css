@@ -53,6 +53,7 @@ nav .nav-mobile {
 nav ul {
     display: inherit;
     column-gap: 40px;
+    align-items: center;
 }
 
 nav ul li a {
@@ -123,7 +124,7 @@ p {
 
 .caption,
 b {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 
 .hero-content .form label,
@@ -132,12 +133,14 @@ b {
 }
 
 .hero-content {
-    max-width: 670px;
+    max-width: 780px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin: auto;
     padding: 56px 24px 0;
+    row-gap: 40px;
 }
 
 .input-email {
@@ -183,7 +186,9 @@ input::placeholder {
 }
 
 .hero-content p {
+    max-width: 600px;
     margin-top: 16px;
+
 }
 
 .bottom {
@@ -455,6 +460,12 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
+    .hero-content {
+        row-gap: 0px;
+        padding-bottom: 80px;
+    }
+
     h1 {
         font-size: 3.6rem;
     }
@@ -517,7 +528,7 @@ hr {
     .thanks-content h1 {
         font-size: 2.4rem;
     }
-    
+
     .thanks-content p {
         font-size: 1.4rem;
     }

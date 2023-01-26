@@ -223,7 +223,7 @@ input::placeholder {
 .product-images::before {
     content: '';
     position: absolute;
-    width: 380px;
+    width: 500px;
     height: 215px;
     background-color: var(--tertiary-bg);
     border-radius: 20px;
@@ -238,7 +238,7 @@ input::placeholder {
 }
 
 .product-images img {
-    max-height: 408px;
+    max-height: 530px;
     z-index: 100;
 }
 
@@ -466,6 +466,15 @@ hr {
         padding-bottom: 80px;
     }
 
+
+    .product-images img {
+        max-height: 408px;
+    }
+
+    .product-images::before {
+        width: 350px;
+    }
+    
     h1 {
         font-size: 3.6rem;
     }

@@ -53,6 +53,7 @@ nav .nav-mobile {
 nav ul {
     display: inherit;
     column-gap: 40px;
+    align-items: center;
 }
 
 nav ul li a {
@@ -123,16 +124,23 @@ p {
 
 .caption,
 b {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
+}
+
+.hero-content .form label,
+.hero-content .form label b {
+    font-size: 1.6rem;
 }
 
 .hero-content {
-    max-width: 670px;
+    max-width: 780px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin: auto;
     padding: 56px 24px 0;
+    row-gap: 40px;
 }
 
 .input-email {
@@ -178,7 +186,9 @@ input::placeholder {
 }
 
 .hero-content p {
+    max-width: 600px;
     margin-top: 16px;
+
 }
 
 .bottom {
@@ -213,7 +223,7 @@ input::placeholder {
 .product-images::before {
     content: '';
     position: absolute;
-    width: 380px;
+    width: 500px;
     height: 215px;
     background-color: var(--tertiary-bg);
     border-radius: 20px;
@@ -228,7 +238,7 @@ input::placeholder {
 }
 
 .product-images img {
-    max-height: 408px;
+    max-height: 530px;
     z-index: 100;
 }
 
@@ -450,6 +460,21 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
+    .hero-content {
+        row-gap: 0px;
+        padding-bottom: 80px;
+    }
+
+
+    .product-images img {
+        max-height: 408px;
+    }
+
+    .product-images::before {
+        width: 350px;
+    }
+    
     h1 {
         font-size: 3.6rem;
     }
@@ -512,7 +537,7 @@ hr {
     .thanks-content h1 {
         font-size: 2.4rem;
     }
-    
+
     .thanks-content p {
         font-size: 1.4rem;
     }

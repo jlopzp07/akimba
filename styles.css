@@ -7,8 +7,9 @@
     --secondary-bg: #FFF9F9;
     --tertiary-bg: #FEC89A;
     --main-button-bg: #FEC5BB;
-    --font: #575757;
+    --font: #232323;
     --font-placeholder: #8E9EAD;
+    --font-button-weight: 500;
     --header-weight: 600;
     --text-font: 'Nunito', sans-serif;
     --header-font: 'Space Grotesk', sans-serif;
@@ -87,6 +88,7 @@ a {
     border: none;
     cursor: pointer;
     color: var(--font);
+    font-weight: var(--font-button-weight);
 }
 
 .secondary-button {
@@ -462,8 +464,8 @@ hr {
 @media screen and (max-width: 768px) {
 
     .hero-content {
-        row-gap: 0px;
-        padding-bottom: 80px;
+        row-gap: 24px;
+        padding: 48px 0;
     }
 
 

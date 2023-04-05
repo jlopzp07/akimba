@@ -14,7 +14,7 @@
     --text-font: 'Nunito', sans-serif;
     --header-font: 'Space Grotesk', sans-serif;
     --navbar-font-size: 1.6rem;
-    --header-font-size: 6.4rem;
+    --header-font-size: 5.6rem;
     --button-font-size: 1.6rem;
     --body-font-size: 2.4rem;
     --shadows: 1px 1px 0px 2px #222831;
@@ -135,7 +135,7 @@ b {
 }
 
 .hero-content {
-    max-width: 780px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -291,6 +291,20 @@ input::placeholder {
 .contact-container .form {
     margin: 0 auto;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 160px auto;
+    row-gap: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.services-container .column img {
+    width: 300px;
+}
+
 
 .footer-container {
     max-width: 1280px;
@@ -465,7 +479,7 @@ hr {
 
     .hero-content {
         row-gap: 24px;
-        padding: 48px 0;
+        padding: 48px 16px;
     }
 
 
@@ -478,7 +492,7 @@ hr {
     }
     
     h1 {
-        font-size: 3.6rem;
+        font-size: 2.4rem;
     }
 
     p {
@@ -495,6 +509,10 @@ hr {
 
     .top {
         margin-bottom: -60px;
+    }
+
+    .services-container .column img {
+        width: 150px;
     }
 }
 

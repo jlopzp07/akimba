@@ -13,10 +13,10 @@
     --header-weight: 600;
     --text-font: 'Nunito', sans-serif;
     --header-font: 'Space Grotesk', sans-serif;
-    --navbar-font-size: 1.6rem;
+    --navbar-font-size: 1.8rem;
     --header-font-size: 5.6rem;
     --button-font-size: 1.6rem;
-    --body-font-size: 2.4rem;
+    --body-font-size: 2rem;
     --shadows: 1px 1px 0px 2px #222831;
 }
 
@@ -115,7 +115,7 @@ h1 {
 
 h2 {
     font-family: var(--header-font);
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--font);
 }
 
@@ -438,6 +438,17 @@ hr {
 
 .thanks-container .main-button {
     width: 200px;
+}
+
+.content {
+    margin: auto;
+    padding: 52px 0;
+    max-width: 1280px;
+}
+
+.content h1,
+.content h2 {
+    margin: 16px 0;
 }
 
 @media screen and (max-width: 1024px) {
